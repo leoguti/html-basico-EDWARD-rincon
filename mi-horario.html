@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Horario de Clases</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        
+        th {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            border: 2px solid #333;
+        }
+        
+        td {
+            padding: 15px;
+            text-align: center;
+            border: 2px solid #ddd;
+            font-weight: 500;
+        }
+        
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+        
+        /* Colores para las materias */
+        .matematicas {
+            background-color: #FFE5B4;
+            color: #8B4513;
+        }
+        
+        .fisica {
+            background-color: #B4E5FF;
+            color: #003366;
+        }
+        
+        .espanol {
+            background-color: #FFB4E5;
+            color: #660033;
+        }
+        
+        .ingles {
+            background-color: #B4FFB4;
+            color: #003300;
+        }
+        
+        .religion {
+            background-color: #FFE5E5;
+            color: #660000;
+        }
+        
+        .educacion-fisica {
+            background-color: #E5D4FF;
+            color: #330066;
+        }
+        
+        .informatica {
+            background-color: #D4F1FF;
+            color: #003366;
+        }
+        
+        .receso {
+            background-color: #FFFACD;
+            color: #8B8B00;
+            font-style: italic;
+        }
+        
+        .hora {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #ddd;
+            color: #666;
+            font-size: 0.95em;
+        }
+        
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mi Horario de Clases</h1>
+        <p class="subtitle">Colegio Salesiano de Duitama, Boyacá</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Hora</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="hora">7:00 - 8:00</td>
+                    <td class="matematicas">Matemáticas</td>
+                    <td class="fisica">Física</td>
+                    <td class="espanol">Español</td>
+                    <td class="ingles">Inglés</td>
+                    <td class="religion">Religión</td>
+                </tr>
+                <tr>
+                    <td class="hora">8:00 - 9:00</td>
+                    <td class="fisica">Física</td>
+                    <td class="espanol">Español</td>
+                    <td class="ingles">Inglés</td>
+                    <td class="religion">Religión</td>
+                    <td class="matematicas">Matemáticas</td>
+                </tr>
+                <tr>
+                    <td class="hora">9:00 - 10:00</td>
+                    <td class="espanol">Español</td>
+                    <td class="ingles">Inglés</td>
+                    <td class="religion">Religión</td>
+                    <td class="matematicas">Matemáticas</td>
+                    <td class="fisica">Física</td>
+                </tr>
+                <tr>
+                    <td class="hora">10:00 - 10:30</td>
+                    <td colspan="5" class="receso">☕ RECESO</td>
+                </tr>
+                <tr>
+                    <td class="hora">10:30 - 11:30</td>
+                    <td class="ingles">Inglés</td>
+                    <td class="religion">Religión</td>
+                    <td class="matematicas">Matemáticas</td>
+                    <td class="fisica">Física</td>
+                    <td class="educacion-fisica">Ed. Física</td>
+                </tr>
+                <tr>
+                    <td class="hora">11:30 - 12:30</td>
+                    <td class="religion">Religión</td>
+                    <td class="matematicas">Matemáticas</td>
+                    <td class="fisica">Física</td>
+                    <td class="informatica">Informática</td>
+                    <td class="informatica">Informática</td>
+                </tr>
+                <tr>
+                    <td class="hora">12:30 - 1:00</td>
+                    <td class="informatica">Informática</td>
+                    <td class="educacion-fisica">Ed. Física</td>
+                    <td class="informatica">Informática</td>
+                    <td class="educacion-fisica">Ed. Física</td>
+                    <td class="espanol">Español</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <footer>
+            <p>Hecho con HTML + Copilot | Escuela OSM Salesiano 2026</p>
+        </footer>
+    </div>
+</body>
+</html>
